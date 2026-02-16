@@ -1,103 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erantra</title>
-    <meta name="description" content="Erantra builds value-added software products.">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-            background-color: #0a0a0b;
-            color: #f0f0f2;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 4rem 2rem;
-        }
-
-        .content {
-            max-width: 520px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 1.25rem;
-        }
-
-        p {
-            color: #8a8a95;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        footer {
-            padding: 2.5rem 2rem;
-            border-top: 1px solid #1a1a1d;
-            text-align: center;
-            color: #555;
-            font-size: 0.85rem;
-            line-height: 1.8;
-        }
-
-        .footer-address {
-            margin-bottom: 1.25rem;
-            color: #666;
-        }
-
-        .footer-bottom {
-            color: #444;
-        }
-
-        footer a {
-            color: #777;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #f0f0f2;
-        }
-    </style>
+    <title>Erantra — Software Products That Matter</title>
+    <meta name="description" content="Erantra builds value-added software products that solve real problems. Quality, simplicity, and well-engineered solutions from Bangalore, India.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <main>
-        <div class="content">
-            <h1>Erantra</h1>
-            <p>We build value-added software products that solve real problems and make everyday tasks simpler. Our focus is on crafting reliable, well-engineered solutions — from concept through delivery — for businesses and individuals who value quality and simplicity.</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="Erantra Logo">
+                <span>Erantra</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mailto:contact@erantra.com" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </main>
+    </nav>
 
-    <footer>
-        <div class="footer-address">
-            Erantra Private Limited<br>
-            #677, 1st Floor, Desk No.169A<br>
-            27th Main, 13th Cross<br>
-            HSR Layout, Sector 1, Bangalore<br>
-            Karnataka, India 560 102
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="hero-badge">Software That Matters</div>
+                <h1>We Build Products That <span class="highlight">Solve Real Problems</span></h1>
+                <p>Erantra crafts reliable, well-engineered software solutions — from concept through delivery — for businesses and individuals who value quality and simplicity.</p>
+                <div class="hero-actions">
+                    <a href="mailto:contact@erantra.com" class="btn-primary">
+                        Start a Conversation
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33 8h9.34M8.67 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-graphic">
+                    <div class="hero-card">
+                        <div class="hero-card-icon">&#9881;</div>
+                        <div class="hero-card-label">Engineering</div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon">&#9889;</div>
+                        <div class="hero-card-label">Performance</div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon">&#9878;</div>
+                        <div class="hero-card-label">Quality</div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-icon">&#10024;</div>
+                        <div class="hero-card-label">Simplicity</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-bottom">
-            &copy; 2026 Erantra Private Limited &middot;
-            <a href="mailto:contact@erantra.com">contact@erantra.com</a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">Who We Are</div>
+                <h2>Building Software with Purpose</h2>
+                <p>We're a focused team based in Bangalore, India, driven by the belief that great software starts with understanding real problems.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/logo.png" alt="Erantra">
+                </div>
+                <div class="about-content">
+                    <h3>Crafting Solutions, Not Just Code</h3>
+                    <p>At Erantra, we build value-added software products that make everyday tasks simpler. We care deeply about the craft — every line of code, every design decision, and every user interaction is intentional.</p>
+                    <p>Our approach is grounded in simplicity and reliability. We don't chase trends; we focus on building things that work well and stand the test of time.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon red">&#10003;</div>
+                            <span>Quality First</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon blue">&#10003;</div>
+                            <span>Simple Design</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon teal">&#10003;</div>
+                            <span>User Focused</span>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon orange">&#10003;</div>
+                            <span>Reliable Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">What We Do</div>
+                <h2>End-to-End Software Solutions</h2>
+                <p>From ideation to deployment, we cover the full spectrum of software product development.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon red">&#128187;</div>
+                    <h3>Product Development</h3>
+                    <p>Full-cycle product engineering from concept validation to market-ready software that users love.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon blue">&#9729;</div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <p>Scalable cloud architectures and infrastructure that grows with your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon teal">&#128241;</div>
+                    <h3>Mobile Solutions</h3>
+                    <p>Native and cross-platform mobile applications built for performance and great user experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon orange">&#128202;</div>
+                    <h3>Data & Analytics</h3>
+                    <p>Data pipelines, analytics platforms, and intelligent systems that turn data into actionable insights.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon purple">&#128272;</div>
+                    <h3>Security & Compliance</h3>
+                    <p>Secure-by-design software with built-in compliance for regulated industries and sensitive data.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon green">&#9889;</div>
+                    <h3>API & Integrations</h3>
+                    <p>Robust APIs and third-party integrations that connect your systems and streamline workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products" id="products">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">Our Products</div>
+                <h2>Products We're Building</h2>
+                <p>We're working on software products that we believe will make a meaningful difference.</p>
+            </div>
+            <div class="products-placeholder">
+                <div class="products-placeholder-icon">&#128640;</div>
+                <h3>Coming Soon</h3>
+                <p>We're crafting our products with care. Stay tuned — exciting launches are on the horizon. Reach out if you'd like early access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Commitment</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Availability</p>
+            </div>
+            <div class="stat-item">
+                <h3>End-to-End</h3>
+                <p>Solutions</p>
+            </div>
+            <div class="stat-item">
+                <h3>India</h3>
+                <p>Based in Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">Get in Touch</div>
+                <h2>Let's Build Something Together</h2>
+                <p>Whether you have a project in mind or just want to say hello, we'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Reach Out to Us</h3>
+                    <p>We're always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon red">&#9993;</div>
+                            <div class="contact-method-text">
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:contact@erantra.com">contact@erantra.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon blue">&#127968;</div>
+                            <div class="contact-method-text">
+                                <h4>Visit Us</h4>
+                                <p>#677, 1st Floor, Desk No.169A<br>27th Main, 13th Cross, HSR Layout<br>Sector 1, Bangalore 560102</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon teal">&#127758;</div>
+                            <div class="contact-method-text">
+                                <h4>Connect Online</h4>
+                                <p><a href="https://www.linkedin.com/company/erantra" target="_blank" rel="noopener noreferrer">LinkedIn — Erantra</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>Let's Connect</h3>
+                    <p>Follow us on LinkedIn for updates on our journey, or drop us an email to start a conversation about your next project.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/erantra" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            Follow on LinkedIn
+                        </a>
+                        <a href="mailto:contact@erantra.com" class="social-link email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <img src="assets/logo.png" alt="Erantra Logo">
+                        <span>Erantra</span>
+                    </a>
+                    <p>Building value-added software products that solve real problems and make everyday tasks simpler.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:contact@erantra.com">Email Us</a></li>
+                        <li><a href="https://www.linkedin.com/company/erantra" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Erantra Private Limited. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="mailto:contact@erantra.com">contact@erantra.com</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
