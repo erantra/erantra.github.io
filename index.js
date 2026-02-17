@@ -46,7 +46,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // Scroll animations
-const animateElements = document.querySelectorAll('.service-card, .section-header, .about-grid, .contact-grid, .products-placeholder, .stat-item');
+const animateElements = document.querySelectorAll('.service-card, .product-card, .section-header, .about-grid, .contact-grid, .stat-item');
 animateElements.forEach(el => el.classList.add('animate-in'));
 
 const observer = new IntersectionObserver((entries) => {

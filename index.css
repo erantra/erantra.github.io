@@ -691,32 +691,82 @@ img {
     background: var(--color-bg);
 }
 
-.products-placeholder {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, var(--color-bg-alt), var(--color-bg-subtle));
-    border-radius: 20px;
-    border: 2px dashed var(--color-placeholder-border);
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-.products-placeholder-icon {
-    font-size: 3rem;
+.product-card {
+    background: var(--color-card);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border-subtle);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent-purple));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px var(--color-card-shadow-hover);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.product-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.products-placeholder h3 {
-    font-size: 1.5rem;
+.product-icon.purple { background: var(--icon-bg-purple); }
+
+.product-card h3 {
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--color-text);
     margin-bottom: 0.75rem;
 }
 
-.products-placeholder p {
-    font-size: 1rem;
+.product-card p {
+    font-size: 0.95rem;
     color: var(--color-text-muted);
-    max-width: 420px;
-    margin: 0 auto;
     line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.product-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+
+.product-card:hover .product-link {
+    color: var(--color-primary-hover);
 }
 
 /* --- Stats Banner --- */
@@ -1037,7 +1087,8 @@ img {
         order: -1;
     }
 
-    .services-grid {
+    .services-grid,
+    .products-grid {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1094,7 +1145,8 @@ img {
         display: none;
     }
 
-    .services-grid {
+    .services-grid,
+    .products-grid {
         grid-template-columns: 1fr;
     }
 
